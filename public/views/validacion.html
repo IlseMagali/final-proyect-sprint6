@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Validación de tu número</title>
+		<!-- links -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<img class="col s8 offset-s2 img-phonenumber" src="/img/icons/phone.png" alt="">
+			</div>
+			<div class="row center">
+				<div class="col s12">
+					<h5><strong>Para comenzar validemos tu número</strong></h5>
+					<p>Recibirás un SMS con un código de validación</p>
+				</div>
+			</div>
+			<div class="row">
+				<form id="form-phone-number" >
+					<label for=""><img class="col s4" src="/img/icons/phoneandnumber.png" alt=""></label>
+					<div class="input-field col s8 disabled">
+						<input id="enter_number" type="text">
+					</div>
+					<div class="col s12">
+						<p class="center">
+					      <input type="checkbox" id="checkbox-terms"/>
+					      <label for="checkbox-terms">Acepto los <a href="#">Términos y condiciones.</a></label>
+					    </p>
+					</div>
+					<div class="col s12 center">
+						<button id="button-validate" class="btn" type="submit" name="action" disabled>CONTINUAR</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- scripts -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../js/validation.js"></script>
+	</body>
+</html>

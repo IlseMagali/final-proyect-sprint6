@@ -1,7 +1,68 @@
-div.carousel-item img {
-	height: 20vh;
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height: 100vh;
+	box-sizing: border-box;
+}
+/*index styles*/
+
+.extra-margin {
+	margin-top: 40%;
+}
+.carousel .carousel-slider .center .carousel-item {
+	min-height: 400px;
+    height: 400px;
+}
+.carousel .indicators .indicator-item  {
+	background-color: #f8f8f8;
+}
+.carousel .indicators .indicator-item.active {
+    background-color: #f64552;
+}
+.yellow-button {
+	height: 4em;
+	width:100%;
+	background-color:#fbd43b;
+	border:none;
 }
 
-div.row h1 {
-	
+/*index styles*/
+
+/*validate number styles*/
+#button-validate, .img-phonenumber {
+	margin-top: 20%;
 }
+/*validate number styles*/
+
+/*registration styles*/
+.lock-image {
+	width: 30px;
+	height: 40px;
+}
+/*registration styles*/
+
+/*creating user styles*/
+.img-lockone {
+	margin-top: 0.5em;
+	border-bottom: 1px solid black;
+}
+.icon_name {
+	background-size: cover;
+	width:25px;
+	height:22px;
+	background-image: url("../img/icons/user.png");
+}
+.icon_mail {
+	background-size: cover;
+	width:25px;
+	height:22px;
+	background-image: url("../img/icons/message-gray.png");
+}
+.icon_pass {
+	background-size: cover;
+	width:15px;
+	height:20px;
+	background-image: url("../img/icons/lock.png");
+}
+/*creating user styles*/
