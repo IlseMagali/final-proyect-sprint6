@@ -18,9 +18,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(morgan(format));
+
+// app.use("/static", express.static(__dirname + "/node_modules"))
+
 // agregado ilse
 app.get("/", function (req, res){
-  res.sendFile(__dirname + "/public" + "/index.html");
+  res.sendFile(__dirname + "/public/index.html");
 });
 // agregado ilse
 let router = express.Router();
@@ -29,7 +32,7 @@ router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
 });
 
-app.use('/api',apiUsers(router,db));
+app.use('/api',apiUsers(router,db));//ruta del api
 
 const port = process.env.PORT || 3000;
 
