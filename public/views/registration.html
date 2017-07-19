@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Verificación y registro de usuario</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<img class="col s8 offset-s2 img-phonenumber" src="/img/icons/message.png" alt="">
+			</div>
+			<div class="row center">
+				<div class="col s12">
+					<h5><strong>Ahora ingresa tu código</strong></h5>
+					<p>Enviamos un SMS con el código de validación al número: <span id="phone_number"><strong>55 5197 9008</strong></span></p>
+				</div>
+			</div>
+			<div class="row center">
+				<form id="form-enter-code" class="col s12" action="index.html" method="post">
+					<label class="col s3 " for=""><img class="lock-image" src="/img/icons/lock.png" alt=""></label>
+					<div class="input-field col s9">
+						<input id="enter-code" type="text">
+					</div>
+				</form>
+			</div>
+			<div class="row center">
+				<div class="col s12">
+					<span>Reintentar en <i class="material-icons tiny">query_builder</i><span id="counter">21</span>segs.</span>
+				</div>
+			</div>
+		</div>
+		<!-- scripts -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../js/registration.js"></script>
+	</body>
+</html>

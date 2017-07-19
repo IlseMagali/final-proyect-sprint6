@@ -1,11 +1,11 @@
 var $formNumber = $("#form-phone-number");
 var $inputFormNumber = $("#enter_number");
 var $buttonForm = $("#button-validate");
-var $checkboxTerms = $("checkbox-terms");
+var $checkboxTerms = $("#checkbox-terms");
 
 function validateInput() {
-	if ($checkboxTerms.attr("checked") === "checked"){
-		$buttonForm.removeClass("disabled");
+	if ($checkboxTerms.is(":checked") == true){
+		$buttonForm.removeAttr("disabled");
 	}
 	else {
 		console.log("número inválido");
@@ -27,4 +27,5 @@ function registerPhoneNumber(event){
 $(document).ready(function(){
 	$inputFormNumber.keydown(validateInput);
 	$formNumber.submit(registerPhoneNumber);
+	$checkboxTerms.change(validateInput);
 });

@@ -31,6 +31,38 @@ body {
 
 /*validate number styles*/
 #button-validate, .img-phonenumber {
-	margin-top: 10%;
+	margin-top: 20%;
 }
 /*validate number styles*/
+
+/*registration styles*/
+.lock-image {
+	width: 30px;
+	height: 40px;
+}
+/*registration styles*/
+
+/*creating user styles*/
+.img-lockone {
+	margin-top: 0.5em;
+	border-bottom: 1px solid black;
+}
+.icon_name {
+	background-size: cover;
+	width:25px;
+	height:22px;
+	background-image: url("../img/icons/user.png");
+}
+.icon_mail {
+	background-size: cover;
+	width:25px;
+	height:22px;
+	background-image: url("../img/icons/message-gray.png");
+}
+.icon_pass {
+	background-size: cover;
+	width:15px;
+	height:20px;
+	background-image: url("../img/icons/lock.png");
+}
+/*creating user styles*/

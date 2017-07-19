@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registro de tarjeta</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<section class="row">
+				<img class="col s1 offset-s11" src="/img/icons/question.png" alt="">
+			</section>
+		</div>
+		<div class="container">
+			<section class="row">
+				<img class="col s6 offset-s3 img-lockone" src="/img/icons/bcp-logo.png" alt="">
+			</section>
+			<div class="row center">
+				<div class="col s12">
+					<h5><strong>Registra tu tarjeta de débito BCP</strong></h5>
+					<p>Por ahora sólo aceptamos cuenta de ahorro y/o corriente en pesos</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<section class="row center">
+				<form class="col s12" action="index.html" method="post">
+					<div class="input-field col s12">
+						<label class="icon_name" for="user_name"></label>
+						<input id="user_name" type="text" name="" value="" placeholder="Nombre">
+					</div>
+					<div class="input-field col s12">
+						<label class="icon_mail" for="user_mail"></label>
+						<input id="user_mail" type="text" name="" value="" placeholder="ejemplo@correo.com">
+					</div>
+					<div class="input-field col s12">
+						<label class="icon_pass" for="user_password"></label>
+						<input id="user_password" type="text" name="" value="" placeholder="ejemplo@correo.com">
+					</div>
+					<div class="row">
+						<div class="col s8 offset-s2 ">
+							<p>Cuida esta clase como oro, es tu acceso a Yape.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 center">
+							<button id="button-validate" class="btn disabled" type="submit" name="action">CONTINUAR</button>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>
