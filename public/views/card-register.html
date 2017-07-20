@@ -9,8 +9,8 @@
 	</head>
 	<body>
 		<div class="container">
-			<section class="row">
-				<img class="col s1 offset-s11" src="/img/icons/question.png" alt="">
+			<section class="little-header">
+				<img class="question-img" src="/img/icons/question.png" alt="">
 			</section>
 		</div>
 		<div class="container">
@@ -28,29 +28,44 @@
 			<section class="row center">
 				<form class="col s12" action="index.html" method="post">
 					<div class="input-field col s12">
-						<label class="icon_name" for="user_name"></label>
-						<input id="user_name" type="text" name="" value="" placeholder="Nombre">
-					</div>
-					<div class="input-field col s12">
-						<label class="icon_mail" for="user_mail"></label>
-						<input id="user_mail" type="text" name="" value="" placeholder="ejemplo@correo.com">
-					</div>
-					<div class="input-field col s12">
-						<label class="icon_pass" for="user_password"></label>
-						<input id="user_password" type="text" name="" value="" placeholder="ejemplo@correo.com">
+						<label class="icon_card" for="credit_number"></label>
+						<input id="credit_number" type="text" name="" value="">
 					</div>
 					<div class="row">
-						<div class="col s8 offset-s2 ">
-							<p>Cuida esta clase como oro, es tu acceso a Yape.</p>
+						<div class="col s12 offset-s3">
+							<div class="col s1">
+								<img class="scan-img" src="../img/icons/scan.png" alt="">
+							</div>
+							<div class="col s5">
+								<a href="#">Escanear tarjeta</a>
+							</div>
+						</div>
+					</div>
+					<div class="row container-date">
+						<div class="col s5">
+							<p>Fecha de vencimiento</p>
+						</div>
+						<div class="col s2">
+							<div class="input-field">
+								<input type="text" name="" value="" placeholder="Mes">
+							</div>
+						</div>
+						<div class="col s2">
+							<div class="input-field">
+								<input type="text" name="" value="" placeholder="Año">
+							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col s12 center">
-							<button id="button-validate" class="btn disabled" type="submit" name="action">CONTINUAR</button>
+							<button id="button-register-card" class="btn" type="submit" name="action" disabled>CONTINUAR</button>
 						</div>
 					</div>
 				</form>
 			</section>
 		</div>
+		<!-- scripts -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 	</body>
 </html>

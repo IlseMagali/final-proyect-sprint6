@@ -1,14 +1,15 @@
+// registro de número telefónico
 var $formNumber = $("#form-phone-number");
 var $inputFormNumber = $("#enter_number");
 var $buttonForm = $("#button-validate");
 var $checkboxTerms = $("#checkbox-terms");
 
 function validateInput() {
-	if ($checkboxTerms.is(":checked") == true){
+	if ($checkboxTerms.is(":checked")){
 		$buttonForm.removeAttr("disabled");
 	}
 	else {
-		console.log("número inválido");
+		console.log("botón desactivado");
 	}
 }
 
@@ -18,14 +19,18 @@ function registerPhoneNumber(event){
 	 "phone": $inputFormNumber.val(),
 	 "terms": true
 	}).then(function(respuesta){
-		console.log(respuesta.data.code);
+		alert(respuesta.data.code);
 	}).catch(function(error){
-		console.log("This is an error, please: keep calm.");
+		console.log(error);
 	})
 }
+// registro de número telefónico
+
 
 $(document).ready(function(){
-	$inputFormNumber.keydown(validateInput);
+	// registro de número telefónico
 	$formNumber.submit(registerPhoneNumber);
 	$checkboxTerms.change(validateInput);
+	// registro de número telefónico
+
 });

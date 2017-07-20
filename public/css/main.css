@@ -1,18 +1,17 @@
 body {
 	margin:0;
 	padding:0;
-	width:100%;
-	height: 100vh;
-	box-sizing: border-box;
 }
 /*index styles*/
 
 .extra-margin {
-	margin-top: 40%;
+	margin-top: 10%;
+}
+.carousel {
+	height: 480px !important;
 }
 .carousel .carousel-slider .center .carousel-item {
-	min-height: 400px;
-    height: 400px;
+	min-height: 500px;
 }
 .carousel .indicators .indicator-item  {
 	background-color: #f8f8f8;
@@ -21,7 +20,6 @@ body {
     background-color: #f64552;
 }
 .yellow-button {
-	height: 4em;
 	width:100%;
 	background-color:#fbd43b;
 	border:none;
@@ -30,8 +28,12 @@ body {
 /*index styles*/
 
 /*validate number styles*/
-#button-validate, .img-phonenumber {
+#button-validate, .img-phonenumber, #button-validate a {
 	margin-top: 20%;
+	color:white;
+}
+#button-validate  {
+	background-color:#fbd43b;
 }
 /*validate number styles*/
 
@@ -45,7 +47,6 @@ body {
 /*creating user styles*/
 .img-lockone {
 	margin-top: 0.5em;
-	border-bottom: 1px solid black;
 }
 .icon_name {
 	background-size: cover;
@@ -65,4 +66,137 @@ body {
 	height:20px;
 	background-image: url("../img/icons/lock.png");
 }
+
+#button-register, #button-register a {
+	margin-top: 5%;
+	color:white;
+}
+#button-register {
+	background-color:#fbd43b;
+}
 /*creating user styles*/
+
+/*success message styles*/
+.container-yellow {
+	display:flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #fbd43b;
+}
+.success-img {
+	height: 20vh;
+	width:35%;
+}
+/*success message styles*/
+
+/*card-register styles*/
+.icon_card {
+	background-size: cover;
+	width:20px;
+	height:15px;
+	background-image: url("../img/icons/card.png");
+}
+.scan-img {
+	margin: 3px;
+	width:20px;
+	height:15px;
+}
+.container-date {
+	font-size: 0.8em;
+}
+.little-header {
+	margin:5%;
+	height: 20px;
+	display:flex;
+	justify-content: flex-end;
+	align-items:center;
+}
+
+.question-img {
+	height: 20px;
+	width: 20px;
+}
+/*card-register styles*/
+
+/*card-validate styles*/
+.little-second-header {
+	margin:5%;
+	height: 20px;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.little-second-header a {
+	color:#212121;
+}
+.icon_lock {
+	background-size: cover;
+	width:22px;
+	height:30px;
+	background-image: url("../img/icons/lock.png");
+}
+#button-register-card-code a {
+	margin-top: 5%;
+	color:white;
+}
+#button-register-card-code {
+	background-color: #fbd43b;
+}
+/*card-validate styles*/
+/*user-session styles*/
+.little-third-header {
+	background-color: #451e36;
+	padding:5%;
+	height: 20px;
+	display:flex;
+	justify-content: flex-end;
+	align-items:center;
+}
+.little-third-header img {
+	height: 20px;
+	width: 20px;
+}
+.container-backcolor {
+	background-color: #451e36;
+}
+.container-second-backcolor {
+	background-color: #38052a;
+}
+.container-light-purple {
+	display:flex;
+	flex-direction: column;
+	height: 30vh;
+	justify-content: center;
+	align-items: center;
+	color:white;
+}
+
+.happy-face-img {
+	height: 100px;
+	width: 100px;
+}
+.little-fourth-header {
+	background-color: #38052a;
+	padding:5%;
+	height: 20px;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.little-fourth-header img {
+	height: 20px;
+	width: 20px;
+}
+.little-fourth-header span {
+	color:white;
+}
+.text-white {
+	color:white;
+}
+.button-circle {
+	height: 60px;
+	width: 60px;
+}
+/*user-session styles*/
