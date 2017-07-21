@@ -13,6 +13,17 @@ function validateFilledName () {
 	}
 }
 
+function registrateUser(event) {
+	e.preventDefault();
+	$.post("http://localhost:3000/api/createUser", {
+		"name" : $userName.val(),
+		"mail" : $userMail.val(),
+		"password" : $userPassword.val()
+	}).then(function(response){
+		console.log(response)
+	});
+}
+
 $(document).ready(function(){
 	$userName.keyup(validateFilledName);
 	$userMail.keyup(validateFilledName);
